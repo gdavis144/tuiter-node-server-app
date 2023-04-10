@@ -6,7 +6,13 @@ import UserController
 import TuitsController
     from "./controllers/tuits/tuits-controller.js";
 import mongoose from "mongoose";
-const connection = "mongodb+srv://gdavis:<MeEwWUjTWM9NLZar>@cluster0.ye54qik.mongodb.net/?retryWrites=true&w=majority"
+
+/**
+ * const connection = "mongodb+srv://gdavis:<MeEwWUjTWM9NLZar>@cluster0.ye54qik.mongodb.net/?retryWrites=true&w=majority"
+ *     || 'mongodb://127.0.0.1:27017/tuiter';
+ * @type {string}
+ */
+const connection = 'mongodb+srv://gdavis:MeEwWUjTWM9NLZar@cluster0.ye54qik.mongodb.net/?retryWrites=true&w=majority'
     || 'mongodb://127.0.0.1:27017/tuiter';
 mongoose.connect(connection);
 
